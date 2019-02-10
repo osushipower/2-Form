@@ -6,6 +6,7 @@
         <meta name="author" content="Eduardo Augusto">
         <meta name="keywords" content="HTML, Form, CSS, Javascript, JS">
         <title>My Form</title>
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/style_form.css">
 
     </head>
@@ -14,26 +15,21 @@
         <form action="" method="">
             <label for="name">Your name:</label>
             <input id="name" type="text" required>
-            <br>
             <label for="email">Your email:</label>
             <input id="email" type="text" required>
-            <br>
-            <label>Gender:</label>
-            <label for="gen1">M</label>
-            <input name="gender" id="gen1" type="radio" required>
-            <label for="gen2">F</label>
-            <input name="gender" id="gen2" type="radio" required>
-            <br>
-            <label>Receive Notifications</label>
-            <input name="notif" type="checkbox">
-            <br>
-            <label>Comments:</label>
-            <br>
-            <textarea></textarea>
-            <br>
+            <div id="gender">
+                <label for="gen1">M</label>
+                <input name="gender" id="gen1" type="radio" required>
+                <label for="gen2">F</label>
+                <input name="gender" id="gen2" type="radio" required>
+            </div>
+            <div id="notif">
+                <label>Receive Notifications</label>
+                <input name="notif" type="checkbox">
+            </div>
+            <label for="comment">Comments:</label>
+            <textarea id="comment"></textarea>
             <button type="submit">Register</button>
-
         </form>
-
     </body>
 </html>
